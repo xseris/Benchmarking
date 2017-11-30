@@ -16,3 +16,5 @@ For each parser, the final values are an average of 100 full import operations. 
 | Commons Csv 1.5          |    460   |    505   |  474.44  | + 178.28% |
 
 ### Graphical executions:
+
+![benchmarking](https://github.com/xseris/Benchmarking/blob/master/csv/src/main/resources/images/run.jpg)
