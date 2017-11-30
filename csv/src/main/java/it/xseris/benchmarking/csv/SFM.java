@@ -26,7 +26,7 @@ public class SFM {
 
 			in.close();
 			rows = null;
-			// System.out.println(end);
+			//System.out.println(end);
 			tot += end;
 		}
 		return tot / times;
