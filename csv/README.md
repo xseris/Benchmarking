@@ -1,6 +1,6 @@
 # Some personal CSV benchmarking
 
-The purpose of this benchmark is to compare 5 CSV parser in order to evaluate the fastest one.
+The purpose of this benchmark is to compare 6 CSV parser in order to evaluate the fastest one.
 For each parser, the final values are an average of 100 full import operations. To ensure the most precise results as possible,
  the first 10 tests of each parser have not been considered due to [system warm-up](https://dzone.com/articles/why-many-java-performance-test) period.
  For the same reason, all tests run independently and not one following other.
@@ -17,6 +17,7 @@ The dataset used for benchmarking contains 25000 rows with a total size of about
 | SimpleFlatMapper 3.15.1  |    148   |    275   |  177.89  |  + 4.33%  |
 | Jackson-dataformat 2.8.8 |    192   |    260   |  199.26  |  + 16.87% |
 | OpenCSV 4.0              |    212   |    334   |  246.67  |  + 44.67% |
+| Bytecode OpenCSV 2.4     |    252   |    382   |  291.11  |  + 70.74% |
 | Commons Csv 1.5          |    460   |    505   |  474.44  | + 178.28% |
 
 ### Graphical executions:

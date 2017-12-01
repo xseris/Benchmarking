@@ -8,14 +8,17 @@ public class Application {
 	
 	public static void main(String[] args) throws IOException {
 		Univocity univocity = new Univocity();
-		System.out.println("Univocity took: " + univocity.run(TIMES));
 		CommonsCSV commonsCsv = new CommonsCSV();
-		System.out.println("Commons CSV took: " + commonsCsv.run(TIMES));
 		OpenCSV openCSV = new OpenCSV();
-		System.out.println("OpenCSV took: " + openCSV.run(TIMES));
+		BytecodeOpenCSV bytecodeOpenCSV = new BytecodeOpenCSV();
 		SFM sfm = new SFM();
-		System.out.println("SFM took: " + sfm.run(TIMES));
 		Jackson jackson = new Jackson();
+
+		System.out.println("Univocity took: " + univocity.run(TIMES));
+		System.out.println("Commons CSV took: " + commonsCsv.run(TIMES));
+		System.out.println("OpenCSV took: " + openCSV.run(TIMES));
+		System.out.println("BytecodeOpenCSV took: " + bytecodeOpenCSV.run(TIMES));
+		System.out.println("SFM took: " + sfm.run(TIMES));
 		System.out.println("Jackson took: " + jackson.run(TIMES));
 	}
 }
