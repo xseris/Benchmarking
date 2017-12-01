@@ -7,7 +7,7 @@ For each parser, the final values are an average of 100 full import operations. 
  
 # Dataset
 
-The dataset used for benchmarking contains 250000 rows with a total size of about 30MB
+The dataset used for benchmarking contains 25000 rows with a total size of about 30MB
 
 ### Results (without quotes):
 
