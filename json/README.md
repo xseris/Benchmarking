@@ -30,6 +30,6 @@ The dataset used for benchmarking contains 25000 rows with a total size of about
 ### Graphical executions:
 
 ![serialization benchmarking](https://github.com/xseris/Benchmarking/blob/master/json/src/main/resources/images/runSerializer.jpg)
-![deserialization benchmarking](https://github.com/xseris/Benchmarking/blob/master/json/src/main/resources/images/runDeserialize.jpg)
+![deserialization benchmarking](https://github.com/xseris/Benchmarking/blob/master/json/src/main/resources/images/runDeserializer.jpg)
 
 
