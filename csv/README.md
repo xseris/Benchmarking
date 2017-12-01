@@ -2,7 +2,7 @@
 
 The purpose of this benchmark is to compare 5 CSV parser in order to evaluate the fastest one.
 For each parser, the final values are an average of 100 full import operations. To ensure the most precise results as possible,
- the first 10 tests of each parser have not been considered due to ![system warm-up](https://dzone.com/articles/why-many-java-performance-test) period.
+ the first 10 tests of each parser have not been considered due to [system warm-up](https://dzone.com/articles/why-many-java-performance-test) period.
  For the same reason, all tests run independently and not one following other.
  
 # Dataset
