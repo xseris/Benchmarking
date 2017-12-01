@@ -7,5 +7,6 @@
   
   <modules>
     <module>/csv</module>
+    <module>/json</module>
   </modules>
 </project>
