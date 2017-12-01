@@ -7,15 +7,22 @@ public class Application {
   private static final int TIMES = 100;
 
   public static void main(String[] args) throws IOException {
-    // Flexjson flexjson = new Flexjson();
-    // System.out.println("Flexjson took: " + flexjson.run(TIMES));
-    // Gson gson = new Gson();
-    // System.out.println("Gson took: " + gson.run(TIMES));
-    // Jackson jackson = new Jackson();
-    // System.out.println("Jackson took: " + jackson.run(TIMES));
-    // Jsoniterator jsoniterator = new Jsoniterator();
-    // System.out.println("Jsoniterator took: " + jsoniterator.run(TIMES));
-    Gensonjson genson = new Gensonjson();
-    System.out.println("Gensonjson took: " + genson.run(TIMES));
+    FlexJSON flexjson = new FlexJSON();
+    GsonJSON gson = new GsonJSON();
+    JacksonJSON jackson = new JacksonJSON();
+    JsoniteratorJSON jsoniterator = new JsoniteratorJSON();
+    GensonJSON genson = new GensonJSON();
+
+    System.out.println("Flexjson serialization took: " + flexjson.runSer(TIMES));
+    System.out.println("Gson serialization took: " + gson.runSer(TIMES));
+    System.out.println("Jackson serialization took: " + jackson.runSer(TIMES));
+    System.out.println("Jsoniterator serialization took: " + jsoniterator.runSer(TIMES));
+    System.out.println("Gensonjson serialization took: " + genson.runSer(TIMES));
+
+    System.out.println("Flexjson deserialization took: " + flexjson.runDeser(TIMES));
+    System.out.println("Gson deserialization took: " + gson.runDeser(TIMES));
+    System.out.println("Jackson deserialization took: " + jackson.runDeser(TIMES));
+    System.out.println("Jsoniterator deserialization took: " + jsoniterator.runDeser(TIMES));
+    System.out.println("Gensonjson deserialization took: " + genson.runDeser(TIMES));
   }
 }
