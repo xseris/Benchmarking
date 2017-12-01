@@ -3,9 +3,7 @@
 The purpose of this benchmark is to compare 5 JSON serializer in order to evaluate the fastest one.
 For each serializer, the final values are an average of 100 full POJO serialize and deserialize operations. To ensure the most precise results as possible, the first 10 tests of each parser have not been considered due to [system warm-up](https://dzone.com/articles/why-many-java-performance-test) period. For the same reason, all tests run independently and not one following other.
  
-# Dataset
-
-The dataset used for benchmarking contains 25000 rows with a total size of about 30MB
+# Results
 
 ### Serialization Results:
 
